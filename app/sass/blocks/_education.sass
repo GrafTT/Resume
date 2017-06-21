@@ -1,0 +1,61 @@
+.education 
+	h2
+		margin: 150px auto 80px
+		text-align: center
+		text-transform: uppercase
+		font-family: RalewayBold, sans-serif
+
+.edu-wrap
+	display: flex
+	min-height: 258px
+	margin-bottom: 150px
+
+.edu-period
+	flex: 1 1 98px
+	background-color: $main-color
+	position: relative
+	&:after
+		position: absolute
+		content: " "
+		left: 79px
+		top: 63px 
+		border: 40px solid transparent
+		border-top-width: 20px
+		border-bottom-width: 20px 
+		border-left-color: $main-color	
+	p 	
+		transform: rotate(-90deg)
+		margin-top: 140px
+		font-size: 20px
+		font-family: Lato, sans-serif
+		color: #fff
+		
+.edu-side
+	flex: 1 1 98px
+	background-color: #b7b7b7
+
+
+.edu-content
+	flex: 2 2 auto
+	text-align: left
+	box-shadow: rgba(158,158,158, .75) 0 0 6px
+	z-index: 1
+	h5 
+		margin: 50px 0 10px 54px
+		font-family: LatoBold, sans-serif
+		line-height: 1
+	p
+		&:nth-child(2)
+			margin: 0 0 30px 54px
+			font-size: 16px
+			text-transform: uppercase
+			font-family: Lato, sans-serif
+			line-height: 1.5
+		&:last-child
+			margin: 0 58px 0 54px
+			padding-bottom: 73px
+			font-size: 14px
+			letter-spacing: 0.6px
+			font-family: Lato, sans-serif
+			line-height: 1.7
+	

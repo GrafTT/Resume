@@ -1,0 +1,75 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "blocks/skill"
+@import "blocks/header"
+@import "blocks/navbar"
+@import "blocks/about-me"
+@import "blocks/education"
+@import "blocks/portfolio"
+@import "blocks/address"
+@import "blocks/footer"
+
+*::-webkit-input-placeholder
+	color: #aaa
+	opacity: 1
+
+*:-moz-placeholder
+	color: #aaa
+	opacity: 1
+
+*::-moz-placeholder
+	color: #aaa
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #aaa
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #aaa
+body input:required:valid,
+body textarea:required:valid
+	color: #aaa
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	
+
+h1
+	font-size: 90px
+h2
+	font-size: 45px
+
+h3
+	font-size: 35px
+h4
+	font-size: 26px
+h5
+	font-size: 24px
+a 
+	text-decoration: none
+	color: #000
+	&:hover
+		text-decoration: none
+		opacity: 0.8
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+
+	
+@import "media" // Всегда в конце
