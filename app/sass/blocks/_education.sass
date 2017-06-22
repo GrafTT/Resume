@@ -9,11 +9,15 @@
 	display: flex
 	min-height: 258px
 	margin-bottom: 150px
+	
+	
 
 .edu-period
+	position: relative
+	max-width: 98px
+	white-space: nowrap
 	flex: 1 1 98px
 	background-color: $main-color
-	position: relative
 	&:after
 		position: absolute
 		content: " "
@@ -23,7 +27,7 @@
 		border-top-width: 20px
 		border-bottom-width: 20px 
 		border-left-color: $main-color	
-	p 	
+	p 
 		transform: rotate(-90deg)
 		margin-top: 140px
 		font-size: 20px

@@ -35,29 +35,95 @@
 				width: 47%
 				font-size: 14px
 				line-height: 2
+	.edu-content p:last-child
+		padding-bottom: 40px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
 	/**/
 	h1
-		font-size: 75px
+		font-size: 9.8vw
 	h2
-		font-size: 35px
+		font-size: 4.5vw
+	#nav
+		display: none
+	
+	.portfolio h2, .skill h2, .education h2
+		margin-top: 60px
+	.address h2
+		padding: 60px 0 60px 0	
 	.hireMe
 		margin-bottom: 50px
+		font-size: 2.3vw
 	.head-title
 		margin-top: 50px !important
 	.follow-me
-		display: block	
+		display: block
+		margin: 0	
 	.about-me
 		h3
 			font-size: 25px
 			margin-bottom: 30px
+		&-head
+			flex-direction: column
+			align-items: center
+		.right-side
+			padding: 0
+			p, h3
+				margin: 5px
+		.my-photo
+			img
+				width: 100%
+	// .skill-wrap 
+	// 	.myProgress
+	// 		width: 200px	
+	.edu-content p:last-child
+		padding-bottom: 30px
+	.address-info
+		padding: 0		
+	.callback 
+		#send
+			margin-bottom: 30px	
+	.address-info 
+		h5
+			margin-bottom: 15px	
+		p 
+			margin-bottom: 10px	
+	.hide-menu
+		border: none
+		right: 20px
+		top: 25px
 
+@media only screen and (max-width : 690px)
+	.skill-wrap
+		flex-direction: column
+		.personal-skill
+			margin-left: -11px
+	.edu-content p:last-child
+		line-height: 1.2
+		margin-right: 25px
+	.portfolio-nav 
+		a
+			margin: 49px 1.5vw 0 0	
+	.skill-wrap 
+		h4 
+			font-size: 3.4vw
+		ul li p 
+			font-size: 2.7vw	
+	 .max-value
+	 	font-size: 2.7vw
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
-
-
+	.hireMe
+		padding: 10px 20px
+		font-size: 3vw
+	
+	.portfolio-nav 
+		a
+			margin: 49px 1.5vw 0 0	
+			font-size: 12px	
+	.skill-wrap .myProgress 
+    width: 200px		
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/

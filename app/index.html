@@ -10,9 +10,6 @@
 
 	<title>Title</title>
 	
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	
-
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
@@ -27,9 +24,9 @@
 <body>
 	<header>
 		<div class="header-wrap">
-			<div class="hide-menu">
-				<button class="hamburg">
-					<img src="img/humburger.png" alt="">
+			<div  class="hide-menu">
+				<button id="hamburg" class="hamburg">
+					<img  src="img/humburger.png" alt="">
 				</button>
 			</div>
 
@@ -53,10 +50,10 @@
 		
 	</header>
 
-	<nav>
+	<nav id="nav">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
+				<div class="col-lg-12 col-md-12 col-sm-12 ">
 					<div class="nav-bar">
 						<a href="#aboutme" class="active">About Me</a>
 						<a href="#education" >Education</a>
@@ -132,20 +129,21 @@
 			<div class="row">
 				<h2>Education</h2>
 
-				<div class="edu-wrap">
-					<div class='edu-period'>
-						<p>2011-2012</p>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="edu-wrap">
+						<div class='edu-period'>
+							<p>2011-2012</p>
+						</div>
+						<div class="edu-content">
+							<h5>Masters Degree</h5>
+							<p>Dhaka University</p>
+							<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.A wonderful serenity has taken possession of my entire soul, like these sweet mornings.</p>
+						</div>
+						<div class="edu-side"></div>
 					</div>
-
-					<div class="edu-content">
-						<h5>Masters Degree</h5>
-						<p>Dhaka University</p>
-						<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.A wonderful serenity has taken possession of my entire soul, like these sweet mornings.</p>
-					</div>
-
-					<div class="edu-side"></div>
-
+						
 				</div>
+				
 			</div>
 		</div>
 	</section>
@@ -159,22 +157,39 @@
 						<div class="pro-skill">
 							<h4><img src="img/icon-file.png" alt="">Professional Skills</h4>
 							<ul>
+	
 								<li>
 									<p>User Strategy+Engineering</p>
-									<progress class="progressbar" value="95" max="100"></progress>95%
+									<div class="myProgress">
+										<div class="myBar"></div>
+									</div>
+									<p class="max-value" data-max='88'>0</p>
 								</li>
+								
 								<li>
 									<p>HTML</p>
-									<progress class="progressbar" value="75" max="100"></progress>75%
+									<div class="myProgress">
+										<div class="myBar"></div>
+									</div>
+									<p class="max-value" data-max='75'>0</p>
 								</li>
+								
 								<li>
 									<p>User Experience Design</p>
-									<progress class="progressbar" value="55" max="100"></progress>55%
+									<div class="myProgress">
+										<div class="myBar"></div>
+									</div>
+									<p class="max-value" data-max='42'>0</p>
 								</li>
+								
 								<li>
 									<p>User Experience Design</p>
-									<progress class="progressbar" value="95" max="100"></progress>95%
+									<div class="myProgress">
+										<div class="myBar"></div>
+									</div>
+									<p class="max-value" data-max='55'>0</p>
 								</li>
+								
 							</ul>
 						</div>
 						<div class="personal-skill">
@@ -182,19 +197,34 @@
 							<ul>
 								<li>
 									<p>User Strategy+Engineering</p>
-									<progress class="progressbar" value="85" max="100"></progress>85%
+									<div class="myProgress">
+										<div class="myBar"></div>
+									</div>
+									<p class="max-value" data-max='88'>0</p>
 								</li>
+								
 								<li>
 									<p>HTML</p>
-									<progress class="progressbar" value="80" max="100"></progress>80%
+									<div class="myProgress">
+										<div class="myBar"></div>
+									</div>
+									<p class="max-value" data-max='75'>0</p>
 								</li>
+								
 								<li>
 									<p>User Experience Design</p>
-									<progress class="progressbar" value="85" max="100"></progress>85%
+									<div class="myProgress">
+										<div class="myBar"></div>
+									</div>
+									<p class="max-value" data-max='42'>0</p>
 								</li>
+								
 								<li>
 									<p>User Experience Design</p>
-									<progress class="progressbar" value="50" max="100"></progress>50%
+									<div class="myProgress">
+										<div class="myBar"></div>
+									</div>
+									<p class="max-value" data-max='55'>0</p>
 								</li>
 							</ul>
 						</div>
@@ -243,7 +273,7 @@
 	<section id="portfolio" class="portfolio">
 		<h2>Portfolio</h2>
 		<nav class="portfolio-nav">
-			<a href="#" class="active">all</a>
+			<a href="#">all</a>
 			<a href="#">web design</a>
 			<a href="#">apps</a>
 			<a href="#">dashboard</a>
@@ -293,11 +323,11 @@
 						<h5>Hire Me</h5>
 						<form id="contanct" action="#" name="contacts" method="post">
 							<input id="name" class="txt" name="name" type="name" placeholder="Your Name" />
- 							<input id="email" class="txt" name="email" type="email" placeholder="Your E-mail" />
- 							<input id="topic" class="txt" name="topic" type="topic" placeholder="Your Topic" /> 
+							<input id="email" class="txt" name="email" type="email" placeholder="Your E-mail" />
+							<input id="topic" class="txt" name="topic" type="topic" placeholder="Your Topic" /> 
 							 
 							<textarea id="msg" class="txtarea" name="msg" placeholder="Message"></textarea>
- 							<button id="send">Send</button>
+							<button id="send">Send</button>
 						</form>
 					</div>
 				</div>
