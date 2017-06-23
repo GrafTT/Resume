@@ -23,12 +23,25 @@
 
 <body>
 	<header>
-		<div class="header-wrap">
-			<div  class="hide-menu">
-				<button id="hamburg" class="hamburg">
-					<img  src="img/humburger.png" alt="">
-				</button>
+		
+			<div class="hide-menu">
+				<div class="mobile-nav-button hidden-lg hidden-md hidden-sm">
+					<div class="mobile-nav-button__line"></div>
+					<div class="mobile-nav-button__line"></div>
+					<div class="mobile-nav-button__line"></div>
+				</div>
 			</div>
+			
+			<nav class="mobile-menu">
+				<ul>
+					<li><a href="#aboutme">About Me</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#skill">Skill</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>									
+					<li><a>Clients</a></li>									
+					<li><a href="#contact">Contact</a></li>									
+				</ul>
+			</nav>
 
 			<div class="container">
 				<div class="row">
@@ -46,8 +59,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		
 	</header>
 
 	<nav id="nav">
@@ -273,11 +284,18 @@
 	<section id="portfolio" class="portfolio">
 		<h2>Portfolio</h2>
 		<nav class="portfolio-nav">
-			<a href="#">all</a>
-			<a href="#">web design</a>
-			<a href="#">apps</a>
-			<a href="#">dashboard</a>
-			<a href="#">branding</a>
+			<a class="gallery" href="img/portfolio-1.png" data-group="1">all</a>
+			<a class="gallery" href="img/portfolio-2.png" data-group="1" style="display: none"></a>
+			<a  class="gallery" href="img/portfolio-3.png" data-group="1" style="display: none"></a>
+			<a class="gallery" href="img/portfolio-4.png" data-group="1" style="display: none"></a>
+			<a  class="gallery" href="img/portfolio-5.png" data-group="1" style="display: none"></a>
+			
+
+
+			<a  class="gallery" href="img/portfolio-3.png" data-group="2">web design</a>
+			<a  class="gallery" href="img/portfolio-2.png" data-group="3">apps</a>
+			<a  class="gallery" href="img/portfolio-4.png" data-group="4">dashboard</a>
+			<a  class="gallery" href="img/portfolio-5.png" data-group="5">branding</a>
 		</nav>
 		<div class="container">
 			<div class="row">
@@ -321,10 +339,10 @@
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<div class="callback">
 						<h5>Hire Me</h5>
-						<form id="contanct" action="#" name="contacts" method="post">
-							<input id="name" class="txt" name="name" type="name" placeholder="Your Name" />
-							<input id="email" class="txt" name="email" type="email" placeholder="Your E-mail" />
-							<input id="topic" class="txt" name="topic" type="topic" placeholder="Your Topic" /> 
+						<form id="contanct" name="contacts" method="post">
+							<input id="name" class="txt" name="name" type="name" placeholder="Your Name" required />
+							<input id="email" class="txt" name="email" type="email" placeholder="Your E-mail" required/>
+							<input id="topic" class="txt" name="topic" type="topic" placeholder="Your Topic" required /> 
 							 
 							<textarea id="msg" class="txtarea" name="msg" placeholder="Message"></textarea>
 							<button id="send">Send</button>
@@ -375,6 +393,8 @@
 
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
+	<!-- <script src="libs/magnific-popup/magnific-popup.min.js"></script> -->
+	<script type="text/javascript" src="libs/light-box/lightbox.js"></script>
 
 </body>
 </html>
