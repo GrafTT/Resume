@@ -5,7 +5,9 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
-
+	.info, .biography 
+		h3
+			font-size: 30px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -15,6 +17,8 @@
 	.hireMe
 		margin-bottom: 50px
 	.about-me
+		.info ul li
+			padding-bottom: 37px
 		h3
 			font-size: 25px
 			margin-bottom: 30px
@@ -60,6 +64,8 @@
 		display: block
 		margin: 0	
 	.about-me
+		.info ul li
+			padding-bottom: 10px
 		h3
 			font-size: 25px
 			margin-bottom: 30px
@@ -78,6 +84,8 @@
 	// 		width: 200px	
 	.edu-content p:last-child
 		padding-bottom: 30px
+	.edu-between
+		display: none	
 	.address-info
 		padding: 0		
 	.callback 
@@ -92,7 +100,7 @@
 		border: none
 		right: 20px
 		top: 25px
-	.dl-button, .edu-wrap, .language, .portfolio-btn, .portfolio-btn  
+	.dl-button, .edu-wrap.last-block, .language, .portfolio-btn, .portfolio-btn  
 		margin-bottom: 30px
 	.address-info 
 		.map
@@ -128,7 +136,9 @@
 			font-size: 12px	
 	.skill-wrap .myProgress 
     width: 200px	
-	
+	.edu-content p:last-child
+		overflow: hidden
+		text-overflow: ellipsis
 	
 
 /* Custom, iPhone Retina */
