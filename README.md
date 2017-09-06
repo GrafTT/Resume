@@ -1,2 +1,2 @@
-$npm instal
+$npm instal ->
 $gulp
