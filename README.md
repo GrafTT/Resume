@@ -1,1 +1,2 @@
-first project
+$npm instal
+$gulp
